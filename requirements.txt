@@ -1,2 +1,10 @@
 pandas
 pyarrow
+sklearn
+polars
+scipy
+seaborn
+matplotlib
+xgboost
+catboost
+tensorflow
