@@ -1,0 +1,8 @@
+data_label,precision_0,recall_0,f1_score_0,precision_1,recall_1,f1_score_1
+ft-tstrategy-1-pca-dim-50,0.9995756859836807,1.0,0.9997877979716929,0.0,0.0,0.0
+data_label,precision_0,recall_0,f1_score_0,precision_1,recall_1,f1_score_1
+ft-tstrategy-1-pca-dim-80,0.9995756859836807,1.0,0.9997877979716929,0.0,0.0,0.0
+data_label,precision_0,recall_0,f1_score_0,precision_1,recall_1,f1_score_1
+ft-tstrategy-1-pca-dim-80,0.9995756859836807,1.0,0.9997877979716929,0.0,0.0,0.0
+data_label,precision_0,recall_0,f1_score_0,precision_1,recall_1,f1_score_1
+ft-tstrategy-2,0.999585783118735,0.9999966309989275,0.9997911648510235,0.75,0.023809523809523808,0.046153846153846156
