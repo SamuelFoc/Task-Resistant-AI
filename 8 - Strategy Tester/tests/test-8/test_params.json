@@ -1,0 +1,24 @@
+{
+    "test_name": "test-8",
+    "data_path": "data/clean_transactions.pq",
+    "split_date": "2019-10-01 00:00:00",
+    "target_col": "Is Fraud",
+    "datetime_col": "Datetime",
+    "model_type": "CatBoost",
+    "model_params": {
+        "iterations": 500,
+        "learning_rate": 0.05,
+        "depth": 8,
+        "loss_function": "Logloss",
+        "eval_metric": "AUC",
+        "verbose": 0,
+        "random_state": 42,
+        "task_type": "GPU",
+        "devices": "0",
+        "class_weights": [
+            1,
+            10
+        ]
+    },
+    "evaluation_file": "tests/test-8/evaluations.csv"
+}

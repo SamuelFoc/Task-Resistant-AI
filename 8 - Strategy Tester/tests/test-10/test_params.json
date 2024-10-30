@@ -1,0 +1,26 @@
+{
+    "test_name": "test-10",
+    "data_path": "data/clean_transactions.pq",
+    "split_date": "2019-10-01 00:00:00",
+    "target_col": "Is Fraud",
+    "datetime_col": "Datetime",
+    "model_type": "CatBoost",
+    "model_params": {
+        "iterations": 2000,
+        "learning_rate": 0.015,
+        "depth": 7,
+        "loss_function": "Logloss",
+        "eval_metric": "F1",
+        "verbose": 0,
+        "random_state": 42,
+        "task_type": "GPU",
+        "devices": "0",
+        "class_weights": [
+            1,
+            50
+        ],
+        "early_stopping_rounds": 100,
+        "l2_leaf_reg": 5
+    },
+    "evaluation_file": "tests/test-10/evaluations.csv"
+}

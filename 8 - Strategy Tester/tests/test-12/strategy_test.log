@@ -1,0 +1,149 @@
+2024-10-30 12:16:00,743 - INFO - Preprocessor - Preprocessor initialized.
+2024-10-30 12:16:00,745 - INFO - StrategyTester - Test parameters saved to tests/test-12\test_params.json
+2024-10-30 12:16:00,745 - INFO - StrategyTester - Testing strategy: strategy_0
+2024-10-30 12:16:00,747 - INFO - FeatureExtractor - Initialized with strategy: strategy_0
+2024-10-30 12:16:00,748 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 12:16:24,318 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_0
+2024-10-30 12:16:24,823 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 12:16:24,828 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 12:16:24,829 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 12:16:33,497 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Card Type', 'Gender']
+2024-10-30 12:16:37,230 - INFO - ScaleEncode - Replaced inf values in column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 12:16:39,359 - INFO - ScaleEncode - Replaced inf values in column 'IncomeToSpendingRatioPerson' with median: 1252.717391
+2024-10-30 12:16:40,069 - INFO - ScaleEncode - Replaced NaN values in numeric column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 12:16:40,070 - WARNING - ScaleEncode - Handled unsafe numeric columns: {'AmountToCreditLimitRatio': 'nan', 'IncomeToSpendingRatioPerson': 'inf'}
+2024-10-30 12:16:40,071 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 12:16:53,591 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 12:16:55,489 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 12:17:04,180 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 12:17:04,180 - INFO - Preprocessor - Applying SMOTE to address class imbalance.
+2024-10-30 12:17:04,240 - INFO - Preprocessor - Class distribution before SMOTE: {0: 10722462, 1: 17365}
+2024-10-30 12:17:14,083 - INFO - Preprocessor - Class distribution after SMOTE: {0: 10722462, 1: 107224}
+2024-10-30 12:17:14,323 - INFO - useModel - useModel initialized for CatBoost.
+2024-10-30 12:20:10,724 - INFO - useModel - Evaluating model.
+2024-10-30 12:20:14,076 - INFO - useModel - Evaluation results saved to tests/test-12/evaluations.csv.
+2024-10-30 12:20:14,077 - INFO - StrategyTester - Testing strategy: strategy_1
+2024-10-30 12:20:14,078 - INFO - FeatureExtractor - Initialized with strategy: strategy_1
+2024-10-30 12:20:14,079 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 12:20:40,131 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_1
+2024-10-30 12:20:40,638 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 12:20:40,795 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 12:20:40,796 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 12:20:51,313 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Card Type', 'Gender', 'Age Group']
+2024-10-30 12:20:53,181 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 12:21:05,030 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 12:21:06,994 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 12:21:15,488 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 12:21:15,489 - INFO - Preprocessor - Applying SMOTE to address class imbalance.
+2024-10-30 12:21:15,545 - INFO - Preprocessor - Class distribution before SMOTE: {0: 10722462, 1: 17365}
+2024-10-30 12:21:27,669 - INFO - Preprocessor - Class distribution after SMOTE: {0: 10722462, 1: 107224}
+2024-10-30 12:21:28,428 - INFO - useModel - useModel initialized for CatBoost.
+2024-10-30 12:24:28,237 - INFO - useModel - Evaluating model.
+2024-10-30 12:24:31,236 - INFO - useModel - Evaluation results saved to tests/test-12/evaluations.csv.
+2024-10-30 12:24:31,237 - INFO - StrategyTester - Testing strategy: strategy_2
+2024-10-30 12:24:31,238 - INFO - FeatureExtractor - Initialized with strategy: strategy_2
+2024-10-30 12:24:31,238 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 12:25:02,421 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_2
+2024-10-30 12:25:02,924 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 12:25:03,670 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 12:25:03,670 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 12:25:05,589 - WARNING - ScaleEncode - Dropping high-cardinality column 'Person'
+2024-10-30 12:25:06,344 - WARNING - ScaleEncode - Dropping high-cardinality column 'State'
+2024-10-30 12:25:12,403 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Card Type', 'Person', 'Gender', 'State']
+2024-10-30 12:25:13,439 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 12:25:21,155 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 12:25:22,708 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 12:25:29,751 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 12:25:29,752 - INFO - Preprocessor - Applying SMOTE to address class imbalance.
+2024-10-30 12:25:29,809 - INFO - Preprocessor - Class distribution before SMOTE: {0: 10722462, 1: 17365}
+2024-10-30 12:25:36,682 - INFO - Preprocessor - Class distribution after SMOTE: {0: 10722462, 1: 107224}
+2024-10-30 12:25:37,073 - INFO - useModel - useModel initialized for CatBoost.
+2024-10-30 12:28:19,522 - INFO - useModel - Evaluating model.
+2024-10-30 12:28:22,520 - INFO - useModel - Evaluation results saved to tests/test-12/evaluations.csv.
+2024-10-30 12:28:22,521 - INFO - StrategyTester - Testing strategy: strategy_3
+2024-10-30 12:28:22,523 - INFO - FeatureExtractor - Initialized with strategy: strategy_3
+2024-10-30 12:28:22,523 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 12:28:34,421 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_3
+2024-10-30 12:28:34,942 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 12:28:35,638 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 12:28:35,638 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 12:28:37,358 - WARNING - ScaleEncode - Dropping high-cardinality column 'Merchant Name'
+2024-10-30 12:28:38,288 - WARNING - ScaleEncode - Dropping high-cardinality column 'Person'
+2024-10-30 12:28:44,569 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Merchant Name', 'Card Type', 'Person', 'Gender', 'Age Group']
+2024-10-30 12:28:47,440 - INFO - ScaleEncode - Replaced inf values in column 'IncomeToSpendingRatio' with median: 1252.717391
+2024-10-30 12:28:47,681 - WARNING - ScaleEncode - Handled unsafe numeric columns: {'IncomeToSpendingRatio': 'inf'}
+2024-10-30 12:28:47,681 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 12:28:57,263 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 12:28:58,903 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 12:29:04,557 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 12:29:04,558 - INFO - Preprocessor - Applying SMOTE to address class imbalance.
+2024-10-30 12:29:04,613 - INFO - Preprocessor - Class distribution before SMOTE: {0: 10722462, 1: 17365}
+2024-10-30 12:29:12,823 - INFO - Preprocessor - Class distribution after SMOTE: {0: 10722462, 1: 107224}
+2024-10-30 12:29:13,387 - INFO - useModel - useModel initialized for CatBoost.
+2024-10-30 12:39:31,510 - INFO - useModel - Evaluating model.
+2024-10-30 12:39:35,264 - INFO - useModel - Evaluation results saved to tests/test-12/evaluations.csv.
+2024-10-30 12:39:35,264 - INFO - StrategyTester - Testing strategy: strategy_4
+2024-10-30 12:39:35,270 - INFO - FeatureExtractor - Initialized with strategy: strategy_4
+2024-10-30 12:39:35,270 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 12:39:57,155 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_4
+2024-10-30 12:39:57,672 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 12:39:58,614 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 12:39:58,616 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 12:40:01,000 - WARNING - ScaleEncode - Dropping high-cardinality column 'Person'
+2024-10-30 12:40:07,404 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Card Type', 'Person', 'Gender']
+2024-10-30 12:40:08,662 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 12:40:19,246 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 12:40:21,031 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 12:40:29,205 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 12:40:29,206 - INFO - Preprocessor - Applying SMOTE to address class imbalance.
+2024-10-30 12:40:29,264 - INFO - Preprocessor - Class distribution before SMOTE: {0: 10722462, 1: 17365}
+2024-10-30 12:40:38,422 - INFO - Preprocessor - Class distribution after SMOTE: {0: 10722462, 1: 107224}
+2024-10-30 12:40:38,627 - INFO - useModel - useModel initialized for CatBoost.
+2024-10-30 12:43:32,001 - INFO - useModel - Evaluating model.
+2024-10-30 12:43:35,001 - INFO - useModel - Evaluation results saved to tests/test-12/evaluations.csv.
+2024-10-30 12:43:35,002 - INFO - StrategyTester - Testing strategy: strategy_5
+2024-10-30 12:43:35,003 - INFO - FeatureExtractor - Initialized with strategy: strategy_5
+2024-10-30 12:43:35,004 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 12:43:56,053 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_5
+2024-10-30 12:43:56,540 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 12:43:56,713 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 12:43:56,714 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 12:43:58,836 - WARNING - ScaleEncode - Dropping high-cardinality column 'Zip'
+2024-10-30 12:43:59,743 - WARNING - ScaleEncode - Dropping high-cardinality column 'Person'
+2024-10-30 12:44:06,464 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Zip', 'Card Type', 'Person', 'Gender']
+2024-10-30 12:44:09,223 - INFO - ScaleEncode - Replaced inf values in column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 12:44:09,761 - INFO - ScaleEncode - Replaced NaN values in numeric column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 12:44:09,762 - WARNING - ScaleEncode - Handled unsafe numeric columns: {'AmountToCreditLimitRatio': 'nan'}
+2024-10-30 12:44:09,762 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 12:44:20,344 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 12:44:22,053 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 12:44:29,640 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 12:44:29,640 - INFO - Preprocessor - Applying SMOTE to address class imbalance.
+2024-10-30 12:44:29,698 - INFO - Preprocessor - Class distribution before SMOTE: {0: 10722462, 1: 17365}
+2024-10-30 12:44:37,368 - INFO - Preprocessor - Class distribution after SMOTE: {0: 10722462, 1: 107224}
+2024-10-30 12:44:37,612 - INFO - useModel - useModel initialized for CatBoost.
+2024-10-30 12:47:27,367 - INFO - useModel - Evaluating model.
+2024-10-30 12:47:30,392 - INFO - useModel - Evaluation results saved to tests/test-12/evaluations.csv.
+2024-10-30 12:47:30,393 - INFO - StrategyTester - Testing strategy: strategy_6
+2024-10-30 12:47:30,394 - INFO - FeatureExtractor - Initialized with strategy: strategy_6
+2024-10-30 12:47:30,395 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 12:48:10,104 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_6
+2024-10-30 12:48:10,602 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 12:48:10,943 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 12:48:10,945 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 12:48:13,379 - WARNING - ScaleEncode - Dropping high-cardinality column 'Merchant State'
+2024-10-30 12:48:22,412 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Merchant State', 'Card Type', 'Gender', 'Age Group']
+2024-10-30 12:48:26,451 - INFO - ScaleEncode - Replaced inf values in column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 12:48:29,197 - INFO - ScaleEncode - Replaced inf values in column 'IncomeToSpendingRatio' with median: 1252.717391
+2024-10-30 12:48:29,997 - INFO - ScaleEncode - Replaced NaN values in numeric column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 12:48:29,998 - WARNING - ScaleEncode - Handled unsafe numeric columns: {'AmountToCreditLimitRatio': 'nan', 'IncomeToSpendingRatio': 'inf'}
+2024-10-30 12:48:29,998 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 12:48:45,152 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 12:48:47,188 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 12:48:56,450 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 12:48:56,450 - INFO - Preprocessor - Applying SMOTE to address class imbalance.
+2024-10-30 12:48:56,508 - INFO - Preprocessor - Class distribution before SMOTE: {0: 10722462, 1: 17365}
+2024-10-30 12:49:11,422 - INFO - Preprocessor - Class distribution after SMOTE: {0: 10722462, 1: 107224}
+2024-10-30 12:49:11,781 - INFO - useModel - useModel initialized for CatBoost.
+2024-10-30 12:52:19,197 - INFO - useModel - Evaluating model.
+2024-10-30 12:52:22,288 - INFO - useModel - Evaluation results saved to tests/test-12/evaluations.csv.

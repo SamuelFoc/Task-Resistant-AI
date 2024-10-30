@@ -1,0 +1,158 @@
+2024-10-30 03:44:35,241 - INFO - Preprocessor - Preprocessor initialized.
+2024-10-30 03:44:35,242 - INFO - StrategyTester - Test parameters saved to tests/test-9\test_params.json
+2024-10-30 03:44:35,243 - INFO - StrategyTester - Testing strategy: strategy_0
+2024-10-30 03:44:35,244 - INFO - FeatureExtractor - Initialized with strategy: strategy_0
+2024-10-30 03:44:35,244 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 03:45:00,446 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_0
+2024-10-30 03:45:01,359 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 03:45:01,364 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 03:45:01,365 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 03:45:09,538 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Card Type', 'Gender']
+2024-10-30 03:45:13,363 - INFO - ScaleEncode - Replaced inf values in column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 03:45:15,984 - INFO - ScaleEncode - Replaced inf values in column 'IncomeToSpendingRatioPerson' with median: 1252.717391
+2024-10-30 03:45:16,766 - INFO - ScaleEncode - Replaced NaN values in numeric column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 03:45:16,768 - WARNING - ScaleEncode - Handled unsafe numeric columns: {'AmountToCreditLimitRatio': 'nan', 'IncomeToSpendingRatioPerson': 'inf'}
+2024-10-30 03:45:16,770 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 03:45:30,165 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 03:45:32,119 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 03:45:40,685 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 03:45:40,917 - INFO - useModel - useModel initialized for CatBoost.
+2024-10-30 03:48:30,410 - INFO - useModel - Evaluating model.
+2024-10-30 03:48:33,443 - INFO - useModel - Evaluation results saved to tests/test-9/evaluations.csv.
+2024-10-30 03:48:33,444 - INFO - StrategyTester - Testing strategy: strategy_1
+2024-10-30 03:48:33,444 - INFO - FeatureExtractor - Initialized with strategy: strategy_1
+2024-10-30 03:48:33,445 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 03:49:00,392 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_1
+2024-10-30 03:49:01,148 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 03:49:01,315 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 03:49:01,316 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 03:49:11,983 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Card Type', 'Gender', 'Age Group']
+2024-10-30 03:49:14,032 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 03:49:31,377 - INFO - Preprocessor - Preprocessor initialized.
+2024-10-30 03:49:31,378 - INFO - StrategyTester - Test parameters saved to tests/test-9\test_params.json
+2024-10-30 03:49:31,379 - INFO - StrategyTester - Testing strategy: strategy_0
+2024-10-30 03:49:31,381 - INFO - FeatureExtractor - Initialized with strategy: strategy_0
+2024-10-30 03:49:31,381 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 03:49:55,285 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_0
+2024-10-30 03:49:56,330 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 03:49:56,331 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 03:49:56,332 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 03:50:05,162 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Card Type', 'Gender']
+2024-10-30 03:50:08,830 - INFO - ScaleEncode - Replaced inf values in column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 03:50:11,366 - INFO - ScaleEncode - Replaced inf values in column 'IncomeToSpendingRatioPerson' with median: 1252.717391
+2024-10-30 03:50:12,736 - INFO - ScaleEncode - Replaced NaN values in numeric column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 03:50:12,736 - WARNING - ScaleEncode - Handled unsafe numeric columns: {'AmountToCreditLimitRatio': 'nan', 'IncomeToSpendingRatioPerson': 'inf'}
+2024-10-30 03:50:12,738 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 03:50:26,760 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 03:50:28,656 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 03:50:37,475 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 03:50:37,908 - INFO - useModel - useModel initialized for CatBoost.
+2024-10-30 03:53:26,008 - INFO - useModel - Evaluating model.
+2024-10-30 03:53:29,204 - INFO - useModel - Evaluation results saved to tests/test-9/evaluations.csv.
+2024-10-30 03:53:29,204 - INFO - StrategyTester - Testing strategy: strategy_1
+2024-10-30 03:53:29,206 - INFO - FeatureExtractor - Initialized with strategy: strategy_1
+2024-10-30 03:53:29,206 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 03:53:55,500 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_1
+2024-10-30 03:53:56,243 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 03:53:56,409 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 03:53:56,410 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 03:54:06,829 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Card Type', 'Gender', 'Age Group']
+2024-10-30 03:54:08,926 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 03:54:21,910 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 03:54:24,137 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 03:54:33,453 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 03:54:34,224 - INFO - useModel - useModel initialized for CatBoost.
+2024-10-30 03:57:26,671 - INFO - useModel - Evaluating model.
+2024-10-30 03:57:29,656 - INFO - useModel - Evaluation results saved to tests/test-9/evaluations.csv.
+2024-10-30 03:57:29,657 - INFO - StrategyTester - Testing strategy: strategy_2
+2024-10-30 03:57:29,659 - INFO - FeatureExtractor - Initialized with strategy: strategy_2
+2024-10-30 03:57:29,659 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 03:58:00,943 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_2
+2024-10-30 03:58:01,591 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 03:58:01,743 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 03:58:01,743 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 03:58:04,085 - WARNING - ScaleEncode - Dropping high-cardinality column 'Person'
+2024-10-30 03:58:04,817 - WARNING - ScaleEncode - Dropping high-cardinality column 'State'
+2024-10-30 03:58:10,423 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Card Type', 'Person', 'Gender', 'State']
+2024-10-30 03:58:11,783 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 03:58:19,486 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 03:58:21,061 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 03:58:28,112 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 03:58:28,354 - INFO - useModel - useModel initialized for CatBoost.
+2024-10-30 04:01:05,649 - INFO - useModel - Evaluating model.
+2024-10-30 04:01:08,629 - INFO - useModel - Evaluation results saved to tests/test-9/evaluations.csv.
+2024-10-30 04:01:08,629 - INFO - StrategyTester - Testing strategy: strategy_3
+2024-10-30 04:01:08,631 - INFO - FeatureExtractor - Initialized with strategy: strategy_3
+2024-10-30 04:01:08,631 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 04:01:20,447 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_3
+2024-10-30 04:01:20,972 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 04:01:21,659 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 04:01:21,659 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 04:01:23,383 - WARNING - ScaleEncode - Dropping high-cardinality column 'Merchant Name'
+2024-10-30 04:01:24,320 - WARNING - ScaleEncode - Dropping high-cardinality column 'Person'
+2024-10-30 04:01:30,636 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Merchant Name', 'Card Type', 'Person', 'Gender', 'Age Group']
+2024-10-30 04:01:33,551 - INFO - ScaleEncode - Replaced inf values in column 'IncomeToSpendingRatio' with median: 1252.717391
+2024-10-30 04:01:33,785 - WARNING - ScaleEncode - Handled unsafe numeric columns: {'IncomeToSpendingRatio': 'inf'}
+2024-10-30 04:01:33,785 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 04:01:43,453 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 04:01:44,984 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 04:01:50,665 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 04:01:50,904 - INFO - useModel - useModel initialized for CatBoost.
+2024-10-30 04:04:28,337 - INFO - useModel - Evaluating model.
+2024-10-30 04:04:31,353 - INFO - useModel - Evaluation results saved to tests/test-9/evaluations.csv.
+2024-10-30 04:04:31,354 - INFO - StrategyTester - Testing strategy: strategy_4
+2024-10-30 04:04:31,355 - INFO - FeatureExtractor - Initialized with strategy: strategy_4
+2024-10-30 04:04:31,356 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 04:04:52,404 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_4
+2024-10-30 04:04:52,861 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 04:04:53,674 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 04:04:53,675 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 04:04:55,555 - WARNING - ScaleEncode - Dropping high-cardinality column 'Person'
+2024-10-30 04:05:01,648 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Card Type', 'Person', 'Gender']
+2024-10-30 04:05:03,356 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 04:05:13,609 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 04:05:15,602 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 04:05:23,423 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 04:05:23,702 - INFO - useModel - useModel initialized for CatBoost.
+2024-10-30 09:55:15,653 - INFO - useModel - Evaluating model.
+2024-10-30 09:55:18,486 - INFO - useModel - Evaluation results saved to tests/test-9/evaluations.csv.
+2024-10-30 09:55:18,486 - INFO - StrategyTester - Testing strategy: strategy_5
+2024-10-30 09:55:18,495 - INFO - FeatureExtractor - Initialized with strategy: strategy_5
+2024-10-30 09:55:18,495 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 09:55:38,602 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_5
+2024-10-30 09:55:39,361 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 09:55:39,540 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 09:55:39,542 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 09:55:41,354 - WARNING - ScaleEncode - Dropping high-cardinality column 'Zip'
+2024-10-30 09:55:42,238 - WARNING - ScaleEncode - Dropping high-cardinality column 'Person'
+2024-10-30 09:55:48,439 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Zip', 'Card Type', 'Person', 'Gender']
+2024-10-30 09:55:51,551 - INFO - ScaleEncode - Replaced inf values in column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 09:55:52,305 - INFO - ScaleEncode - Replaced NaN values in numeric column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 09:55:52,306 - WARNING - ScaleEncode - Handled unsafe numeric columns: {'AmountToCreditLimitRatio': 'nan'}
+2024-10-30 09:55:52,306 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 09:56:02,374 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 09:56:04,079 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 09:56:11,614 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 09:56:11,995 - INFO - useModel - useModel initialized for CatBoost.
+2024-10-30 09:58:51,103 - INFO - useModel - Evaluating model.
+2024-10-30 09:58:54,043 - INFO - useModel - Evaluation results saved to tests/test-9/evaluations.csv.
+2024-10-30 09:58:54,043 - INFO - StrategyTester - Testing strategy: strategy_6
+2024-10-30 09:58:54,046 - INFO - FeatureExtractor - Initialized with strategy: strategy_6
+2024-10-30 09:58:54,046 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 09:59:32,268 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_6
+2024-10-30 09:59:33,136 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 09:59:33,512 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 09:59:33,512 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 09:59:35,239 - WARNING - ScaleEncode - Dropping high-cardinality column 'Merchant State'
+2024-10-30 09:59:44,419 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Merchant State', 'Card Type', 'Gender', 'Age Group']
+2024-10-30 09:59:48,172 - INFO - ScaleEncode - Replaced inf values in column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 09:59:50,594 - INFO - ScaleEncode - Replaced inf values in column 'IncomeToSpendingRatio' with median: 1252.717391
+2024-10-30 09:59:51,549 - INFO - ScaleEncode - Replaced NaN values in numeric column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 09:59:51,550 - WARNING - ScaleEncode - Handled unsafe numeric columns: {'AmountToCreditLimitRatio': 'nan', 'IncomeToSpendingRatio': 'inf'}
+2024-10-30 09:59:51,551 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 10:00:07,836 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 10:00:10,076 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 10:00:19,316 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 10:00:19,606 - INFO - useModel - useModel initialized for CatBoost.
+2024-10-30 10:03:15,548 - INFO - useModel - Evaluating model.
+2024-10-30 10:03:18,473 - INFO - useModel - Evaluation results saved to tests/test-9/evaluations.csv.
