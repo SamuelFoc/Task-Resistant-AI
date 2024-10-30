@@ -189,6 +189,8 @@ To successfully run the notebooks you have to first install all the requirements
 pip install -r requirements.txt
 ```
 
+If you have any problems installing, try to update your `pip`.
+
 Afterwards you have to upload the base datasets into the `0-Data/0 - original` directory.
 
 - cards.pq
