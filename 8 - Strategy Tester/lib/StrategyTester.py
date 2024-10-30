@@ -13,6 +13,8 @@ class StrategyTester:
         test_name,
         data_path,
         split_date,
+        apply_smote=False,
+        smote_sampling_strategy=0.5,
         target_col="Is Fraud",
         datetime_col="Datetime",
         model_type="XGBoost",
@@ -47,6 +49,8 @@ class StrategyTester:
         self.scaler = scaler or StandardScaler()
         self.evaluation_file = f"tests/{test_name}/{evaluation_file}"
         self.preprocessor = Preprocessor()
+        self.apply_smote = apply_smote
+        self.smote_sampling = smote_sampling_strategy
         
         # Save the test parameters to JSON
         self.save_test_params()
@@ -69,7 +73,9 @@ class StrategyTester:
             "datetime_col": self.datetime_col,
             "model_type": self.model_type,
             "model_params": self.model_params,
-            "evaluation_file": self.evaluation_file
+            "evaluation_file": self.evaluation_file,
+            "smote": self.apply_smote,
+            "smote_sampling": self.smote_sampling
         }
 
         with open(params_file, 'w') as f:
@@ -94,7 +100,7 @@ class StrategyTester:
 
             # Split the data into training and testing sets
             X_train, X_test, y_train, y_test = self.preprocessor.split_by_date(
-                X, y, self.split_date, datetime_col=self.datetime_col
+                X, y, self.split_date, datetime_col=self.datetime_col, smote=self.apply_smote, sampling_strategy=self.smote_sampling
             )
 
             # Initialize and train the model
