@@ -1,0 +1,15 @@
+{
+    "test_name": "test-1",
+    "data_path": "data/clean_transactions.pq",
+    "split_date": "2019-10-01 00:00:00",
+    "target_col": "Is Fraud",
+    "datetime_col": "Datetime",
+    "model_type": "XGBoost",
+    "model_params": {
+        "objective": "binary:logistic",
+        "tree_method": "hist",
+        "max_depth": 6,
+        "device": "cuda"
+    },
+    "evaluation_file": "tests/test-1/evaluations.csv"
+}

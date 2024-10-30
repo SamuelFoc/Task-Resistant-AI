@@ -1,0 +1,128 @@
+2024-10-30 01:23:23,418 - INFO - Preprocessor - Preprocessor initialized.
+2024-10-30 01:23:23,418 - INFO - StrategyTester - Test parameters saved to tests/test-5\test_params.json
+2024-10-30 01:23:23,418 - INFO - StrategyTester - Testing strategy: strategy_0
+2024-10-30 01:23:23,421 - INFO - FeatureExtractor - Initialized with strategy: strategy_0
+2024-10-30 01:23:23,422 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 01:23:50,059 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_0
+2024-10-30 01:23:50,834 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 01:23:50,844 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 01:23:50,845 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 01:24:00,460 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Card Type', 'Gender']
+2024-10-30 01:24:05,138 - INFO - ScaleEncode - Replaced inf values in column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 01:24:08,447 - INFO - ScaleEncode - Replaced inf values in column 'IncomeToSpendingRatioPerson' with median: 1252.717391
+2024-10-30 01:24:09,689 - INFO - ScaleEncode - Replaced NaN values in numeric column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 01:24:09,689 - WARNING - ScaleEncode - Handled unsafe numeric columns: {'AmountToCreditLimitRatio': 'nan', 'IncomeToSpendingRatioPerson': 'inf'}
+2024-10-30 01:24:09,691 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 01:24:27,441 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 01:24:29,227 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 01:24:40,510 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 01:24:40,717 - INFO - useModel - useModel initialized for XGBoost.
+2024-10-30 01:25:03,680 - INFO - useModel - Evaluating model.
+2024-10-30 01:25:06,699 - INFO - useModel - Evaluation results saved to tests/test-5/evaluations.csv.
+2024-10-30 01:25:06,700 - INFO - StrategyTester - Testing strategy: strategy_1
+2024-10-30 01:25:06,702 - INFO - FeatureExtractor - Initialized with strategy: strategy_1
+2024-10-30 01:25:06,702 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 01:25:35,456 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_1
+2024-10-30 01:25:36,304 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 01:25:36,510 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 01:25:36,511 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 01:25:48,434 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Card Type', 'Gender', 'Age Group']
+2024-10-30 01:25:50,638 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 01:26:04,524 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 01:26:06,971 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 01:26:17,413 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 01:26:17,825 - INFO - useModel - useModel initialized for XGBoost.
+2024-10-30 01:26:44,621 - INFO - useModel - Evaluating model.
+2024-10-30 01:26:48,197 - INFO - useModel - Evaluation results saved to tests/test-5/evaluations.csv.
+2024-10-30 01:26:48,198 - INFO - StrategyTester - Testing strategy: strategy_2
+2024-10-30 01:26:48,200 - INFO - FeatureExtractor - Initialized with strategy: strategy_2
+2024-10-30 01:26:48,201 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 01:27:22,985 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_2
+2024-10-30 01:27:23,614 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 01:27:23,847 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 01:27:23,850 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 01:27:26,497 - WARNING - ScaleEncode - Dropping high-cardinality column 'Person'
+2024-10-30 01:27:27,335 - WARNING - ScaleEncode - Dropping high-cardinality column 'State'
+2024-10-30 01:27:34,697 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Card Type', 'Person', 'Gender', 'State']
+2024-10-30 01:27:36,296 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 01:27:46,605 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 01:27:48,630 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 01:27:57,579 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 01:27:58,071 - INFO - useModel - useModel initialized for XGBoost.
+2024-10-30 01:28:18,647 - INFO - useModel - Evaluating model.
+2024-10-30 01:28:22,387 - INFO - useModel - Evaluation results saved to tests/test-5/evaluations.csv.
+2024-10-30 01:28:22,388 - INFO - StrategyTester - Testing strategy: strategy_3
+2024-10-30 01:28:22,390 - INFO - FeatureExtractor - Initialized with strategy: strategy_3
+2024-10-30 01:28:22,390 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 01:28:36,030 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_3
+2024-10-30 01:28:37,073 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 01:28:37,466 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 01:28:37,467 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 01:28:39,422 - WARNING - ScaleEncode - Dropping high-cardinality column 'Merchant Name'
+2024-10-30 01:28:40,382 - WARNING - ScaleEncode - Dropping high-cardinality column 'Person'
+2024-10-30 01:28:47,672 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Merchant Name', 'Card Type', 'Person', 'Gender', 'Age Group']
+2024-10-30 01:28:51,501 - INFO - ScaleEncode - Replaced inf values in column 'IncomeToSpendingRatio' with median: 1252.717391
+2024-10-30 01:28:52,076 - WARNING - ScaleEncode - Handled unsafe numeric columns: {'IncomeToSpendingRatio': 'inf'}
+2024-10-30 01:28:52,078 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 01:29:04,188 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 01:29:05,965 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 01:29:12,185 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 01:29:12,432 - INFO - useModel - useModel initialized for XGBoost.
+2024-10-30 01:29:34,406 - INFO - useModel - Evaluating model.
+2024-10-30 01:29:37,864 - INFO - useModel - Evaluation results saved to tests/test-5/evaluations.csv.
+2024-10-30 01:29:37,865 - INFO - StrategyTester - Testing strategy: strategy_4
+2024-10-30 01:29:37,866 - INFO - FeatureExtractor - Initialized with strategy: strategy_4
+2024-10-30 01:29:37,866 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 01:30:03,702 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_4
+2024-10-30 01:30:04,600 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 01:30:04,839 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 01:30:04,840 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 01:30:07,448 - WARNING - ScaleEncode - Dropping high-cardinality column 'Person'
+2024-10-30 01:30:15,882 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Card Type', 'Person', 'Gender']
+2024-10-30 01:30:18,034 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 01:30:33,737 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 01:30:35,941 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 01:30:45,882 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 01:30:46,340 - INFO - useModel - useModel initialized for XGBoost.
+2024-10-30 01:31:08,377 - INFO - useModel - Evaluating model.
+2024-10-30 01:31:11,726 - INFO - useModel - Evaluation results saved to tests/test-5/evaluations.csv.
+2024-10-30 01:31:11,726 - INFO - StrategyTester - Testing strategy: strategy_5
+2024-10-30 01:31:11,728 - INFO - FeatureExtractor - Initialized with strategy: strategy_5
+2024-10-30 01:31:11,729 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 01:31:35,121 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_5
+2024-10-30 01:31:35,884 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 01:31:36,494 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 01:31:36,494 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 01:31:38,518 - WARNING - ScaleEncode - Dropping high-cardinality column 'Zip'
+2024-10-30 01:31:39,467 - WARNING - ScaleEncode - Dropping high-cardinality column 'Person'
+2024-10-30 01:31:47,497 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Zip', 'Card Type', 'Person', 'Gender']
+2024-10-30 01:31:51,355 - INFO - ScaleEncode - Replaced inf values in column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 01:31:52,134 - INFO - ScaleEncode - Replaced NaN values in numeric column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 01:31:52,136 - WARNING - ScaleEncode - Handled unsafe numeric columns: {'AmountToCreditLimitRatio': 'nan'}
+2024-10-30 01:31:52,137 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 01:32:02,404 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 01:32:04,210 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 01:32:12,058 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 01:32:12,334 - INFO - useModel - useModel initialized for XGBoost.
+2024-10-30 01:32:32,161 - INFO - useModel - Evaluating model.
+2024-10-30 01:32:35,896 - INFO - useModel - Evaluation results saved to tests/test-5/evaluations.csv.
+2024-10-30 01:32:35,897 - INFO - StrategyTester - Testing strategy: strategy_6
+2024-10-30 01:32:35,898 - INFO - FeatureExtractor - Initialized with strategy: strategy_6
+2024-10-30 01:32:35,898 - INFO - FeatureExtractor - Starting feature extraction with data file: data/clean_transactions.pq
+2024-10-30 01:33:16,540 - INFO - FeatureExtractor - Feature extraction completed for strategy: strategy_6
+2024-10-30 01:33:17,242 - INFO - ScaleEncode - Initialized with provided DataFrame.
+2024-10-30 01:33:17,474 - INFO - ScaleEncode - Data successfully loaded.
+2024-10-30 01:33:17,475 - INFO - ScaleEncode - Automatically encoding categorical columns.
+2024-10-30 01:33:19,795 - WARNING - ScaleEncode - Dropping high-cardinality column 'Merchant State'
+2024-10-30 01:33:29,239 - INFO - ScaleEncode - Auto-encoding completed. Encoded columns: ['Use Chip', 'Merchant State', 'Card Type', 'Gender', 'Age Group']
+2024-10-30 01:33:33,006 - INFO - ScaleEncode - Replaced inf values in column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 01:33:35,635 - INFO - ScaleEncode - Replaced inf values in column 'IncomeToSpendingRatio' with median: 1252.717391
+2024-10-30 01:33:36,726 - INFO - ScaleEncode - Replaced NaN values in numeric column 'AmountToCreditLimitRatio' with median: 0.002326
+2024-10-30 01:33:36,726 - WARNING - ScaleEncode - Handled unsafe numeric columns: {'AmountToCreditLimitRatio': 'nan', 'IncomeToSpendingRatio': 'inf'}
+2024-10-30 01:33:36,727 - INFO - ScaleEncode - Scaling numeric columns using StandardScaler
+2024-10-30 01:33:57,253 - INFO - ScaleEncode - Scaling completed.
+2024-10-30 01:33:59,497 - INFO - Preprocessor - Splitting data by date: 2019-10-01 00:00:00
+2024-10-30 01:34:10,707 - INFO - Preprocessor - Data split complete: 10739827 training samples, 2672549 test samples.
+2024-10-30 01:34:11,320 - INFO - useModel - useModel initialized for XGBoost.
+2024-10-30 01:34:40,549 - INFO - useModel - Evaluating model.
+2024-10-30 01:34:43,693 - INFO - useModel - Evaluation results saved to tests/test-5/evaluations.csv.
