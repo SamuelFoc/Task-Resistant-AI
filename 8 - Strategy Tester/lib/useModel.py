@@ -108,7 +108,7 @@ class CatBoostStrategy:
         """
         Trains the CatBoost model.
         """
-        self.model.fit(X_train, y_train, iterations=iterations)
+        self.model.fit(X_train, y_train)
 
     def predict(self, X_test):
         """
