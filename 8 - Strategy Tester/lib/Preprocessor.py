@@ -1,5 +1,6 @@
 import pandas as pd
 from lib.Logger import Logger
+from imblearn.over_sampling import SMOTE
 
 
 class Preprocessor:
@@ -10,7 +11,7 @@ class Preprocessor:
         self.logger = Logger().get_logger(self.__class__.__name__)
         self.logger.info("Preprocessor initialized.")
 
-    def split_by_date(self, X, y, split_date, datetime_col=None):
+    def split_by_date(self, X, y, split_date, datetime_col=None, smote=False, sampling_strategy=0.5):
         """
         Splits data into training and testing sets based on a specified date.
 
@@ -57,6 +58,22 @@ class Preprocessor:
 
         # Log the results of the split
         self.logger.info("Data split complete: %d training samples, %d test samples.", len(X_train), len(X_test))
+
+        # SMOTE alg
+        if smote:
+            self.logger.info("Applying SMOTE to address class imbalance.")
+            smote = SMOTE(sampling_strategy=sampling_strategy, random_state=42)
+            
+            # Log the class distribution before applying SMOTE
+            class_counts_before = y_train.value_counts().to_dict()
+            self.logger.info(f"Class distribution before SMOTE: {class_counts_before}")
+            
+            # Apply SMOTE
+            X_train, y_train = smote.fit_resample(X_train, y_train)
+            
+            # Log the class distribution after applying SMOTE
+            class_counts_after = y_train.value_counts().to_dict()
+            self.logger.info(f"Class distribution after SMOTE: {class_counts_after}")
         
         return X_train, X_test, y_train, y_test
 
