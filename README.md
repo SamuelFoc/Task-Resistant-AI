@@ -203,7 +203,7 @@ Then you can open the [1 - Data Processing](/1%20-%20Data%20Processing/) and run
 
 To run the Strategy Tester, ensure you have the cleaned data file `clean_transactions.pq` located in the [0 - Data / 2 - clean](/0%20-%20Data/2%20-%20clean/) directory. You can generate this file by using the notebooks in [1 - Data Processing](/1%20-%20Data%20Processing/Data%20Processing%20In%20Polar/Data%20Processing.ipynb) to merge data and in [2 - Data Cleaning](/2%20-%20Data%20Cleaning/Data%20Cleaning.ipynb) to clean it. These notebooks will automatically generate the required files within the [0 - Data](/0%20-%20Data/) sub-directories.
 
-Once the data is prepared, navigate to [8 - Strategy Tester](/8%20-%20Strategy%20Tester) to add or adjust strategies. With feature extraction strategies in place, proceed to [x-test.py](/8%20-%20Strategy%20Tester/x-test.py) to set up the model and configure parameters for testing.
+Once the data is prepared, navigate to [8 - Strategy Tester](/8%20-%20Strategy%20Tester) and copy the `clean_transactions.pq` into dir called [data](/8%20-%20Strategy%20Tester/data). To add or adjust strategies you can navigate to [strategies](/8%20-%20Strategy%20Tester/strategies). With feature extraction strategies in place, proceed to [x-test.py](/8%20-%20Strategy%20Tester/x-test.py) to set up the model and configure parameters for testing.
 
 **Configuration Options**
 
