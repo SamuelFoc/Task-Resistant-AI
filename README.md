@@ -4,53 +4,53 @@ This project addresses the problem of fraud detection through a systematic, step
 
 ---
 
-### 0 - Data 🔗 [LinkIcon](/0%20-%20Data/)
+### 0 - Data [🔗](/0%20-%20Data/)
 
 The `Data` directory holds every dataset iteration used throughout the process, broken into six sub-directories:
 
-- 🔗 [0 - original](/0%20-%20Data/0%20-%20original/): The initial raw datasets collected from various sources.
-- 🔗 [1 - merge](/0%20-%20Data/1%20-%20merge/): Merged versions of the original datasets, ready for cleaning.
-- 🔗 [2 - clean](/0%20-%20Data/2%20-%20clean/): Cleaned datasets with invalid values (e.g., NaN, Inf) removed or corrected, ensuring consistency.
-- 🔗 [3 - featured](/0%20-%20Data/3%20-%20featured/): Feature-enhanced datasets created by applying specific feature extraction strategies to clean data.
-- 🔗 [4 - scaled](/0%20-%20Data/4%20-%20scaled/): Datasets encoded and scaled, where categorical features are one-hot encoded and numerical features are normalized.
-- 🔗 [5 - pcas](/0%20-%20Data/5%20-%20pcas/): Dimensionally reduced datasets, obtained by applying PCA or an autoencoder.
+- [0 - original](/0%20-%20Data/0%20-%20original/): The initial raw datasets collected from various sources.
+- [1 - merge](/0%20-%20Data/1%20-%20merge/): Merged versions of the original datasets, ready for cleaning.
+- [2 - clean](/0%20-%20Data/2%20-%20clean/): Cleaned datasets with invalid values (e.g., NaN, Inf) removed or corrected, ensuring consistency.
+- [3 - featured](/0%20-%20Data/3%20-%20featured/): Feature-enhanced datasets created by applying specific feature extraction strategies to clean data.
+- [4 - scaled](/0%20-%20Data/4%20-%20scaled/): Datasets encoded and scaled, where categorical features are one-hot encoded and numerical features are normalized.
+- [5 - pcas](/0%20-%20Data/5%20-%20pcas/): Dimensionally reduced datasets, obtained by applying PCA or an autoencoder.
 
 Each stage of the `Data` pipeline ensures an optimized dataset that best reflects patterns of potential fraud.
 
-### 1 - Data Processing 🔗 [LinkIcon](/1%20-%20Data%20Processing/)
+### 1 - Data Processing [🔗](/1%20-%20Data%20Processing/)
 
 The `Data Processing` directory contains Jupyter Notebooks that merge data using two libraries:
 
-- 🔗 [Using Pandas](/1%20-%20Data%20Processing/Data%20Processing%20in%20Pandas/): A Pandas-based approach for data handling.
-- 🔗 [Using Polars](/1%20-%20Data%20Processing/Data%20Processing%20In%20Polar/): Uses Polars, an alternative library offering enhanced performance with large datasets.
+- [Using Pandas](/1%20-%20Data%20Processing/Data%20Processing%20in%20Pandas/): A Pandas-based approach for data handling.
+- [Using Polars](/1%20-%20Data%20Processing/Data%20Processing%20In%20Polar/): Uses Polars, an alternative library offering enhanced performance with large datasets.
 
 The choice between Pandas and Polars allows for flexibility in data handling, depending on dataset size and computational resources.
 
-### 2 - Data Cleaning 🔗 [LinkIcon](/2%20-%20Data%20Cleaning/)
+### 2 - Data Cleaning [🔗](/2%20-%20Data%20Cleaning/)
 
 In the `Data Cleaning` directory, date columns are converted to datetime formats, and numerical columns (e.g., currency) are stripped of symbols and standardized to float or integer formats. This step also encodes categorical columns to UTF-8 and replaces null values, reducing the risk of errors during later analysis.
 
-### 3 - Data Exploration 🔗 [LinkIcon](/3%20-%20Data%20Exploration/)
+### 3 - Data Exploration [🔗](/3%20-%20Data%20Exploration/)
 
 Exploratory analysis is carried out here to investigate correlations between input features and the target variable, providing insight into potential fraud markers. The analysis highlights dataset imbalances, guiding decisions on preprocessing and model tuning to handle skewed classes.
 
-### 4 - Feature Extraction 🔗 [LinkIcon](/4%20-%20Feature%20Extraction/)
+### 4 - Feature Extraction [🔗](/4%20-%20Feature%20Extraction/)
 
 This directory explores different methods for extracting new features, such as identifying time-dependent features, calculating card usage cycles, and analyzing transaction amounts. Each method aims to enhance the dataset’s representation of fraudulent and non-fraudulent transactions.
 
-### 5 - Scaling & Encoding 🔗 [LinkIcon](/5%20-%20Scaling%20&%20Encoding/)
+### 5 - Scaling & Encoding [🔗](/5%20-%20Scaling%20&%20Encoding/)
 
 Categorical features are one-hot encoded here, while numeric features undergo scaling using a standard scaler, which normalizes values to improve model performance and avoid bias from varied feature scales.
 
-### 6 - PCA or ED 🔗 [LinkIcon](/6%20-%20PCA%20or%20ED/)
+### 6 - PCA or ED [🔗](/6%20-%20PCA%20or%20ED/)
 
 This section documents attempts to reduce the dataset’s dimensionality using Principal Component Analysis (PCA) and autoencoders. These methods aim to streamline data structure without significant information loss, although initial attempts did not yield strong results for fraud detection.
 
-### 7 - Models 🔗 [LinkIcon](/7%20-%20Models/)
+### 7 - Models [🔗](/7%20-%20Models/)
 
 This directory contains implementations of several machine learning models, including XGBoost, CATBoost, and a deep neural network. XGBoost emerged as the most effective, with GPU-accelerated support for enhanced training speed, while the Random Forest model was evaluated but limited by its slower, CPU-bound processing.
 
-### 8 - Strategy Tester 🔗 [LinkIcon](/8%20-%20Strategy%20Tester/)
+### 8 - Strategy Tester [🔗](/8%20-%20Strategy%20Tester/)
 
 This directory contains a testing framework that iterates through different feature extraction, encoding, and scaling strategies, fine-tuning the model’s hyperparameters to optimize fraud detection. It automates repetitive testing processes, reducing the time needed for experimentation.
 
